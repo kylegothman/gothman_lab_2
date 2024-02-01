@@ -1,3 +1,4 @@
+package src;
 public class RoomDimension {
   private double length;
   private double width;
@@ -20,7 +21,7 @@ public class RoomDimension {
   // toString method
   @Override
   public String toString() {
-    return "RoomDimensions: [Length = " + length + " Width = " + width + "]";
+    return "[Length = " + length + " Width = " + width + "]";
   }
 
   // clone method
@@ -56,5 +57,5 @@ public class RoomDimension {
     super.finalize();
   }
 
-  
+
 }

@@ -1,3 +1,4 @@
+package src;
 public class RoomCarpet implements Comparable<RoomCarpet> {
   private RoomDimension size;
   private double carpetCost;

@@ -1,0 +1,35 @@
+@startuml
+
+class RoomDimension {
+    - length : double
+    - width : double
+
+    + RoomDimension(length : double, width : double)
+    + RoomDimension(other : RoomDimension)
+    + getArea() : double
+    + toString() : String
+    + clone() : RoomDimension
+    + hashCode() : int
+    + equals(obj : Object) : boolean
+    + compareTo(other : RoomDimension) : int
+    + finalize() : void
+}
+
+class RoomCarpet {
+    - size : RoomDimension
+    - carpetCost : double
+
+    + RoomCarpet(dim : RoomDimension, cost : double)
+    + RoomCarpet(other : RoomCarpet)
+    + getTotalCost() : double
+    + toString() : String
+    + clone() : RoomCarpet
+    + hashCode() : int
+    + equals(obj : Object) : boolean
+    + compareTo(other : RoomCarpet) : int
+    + finalize() : void
+}
+
+RoomCarpet *-- RoomDimension
+
+@enduml
